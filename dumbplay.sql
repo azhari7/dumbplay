@@ -42,9 +42,7 @@ CREATE TABLE `artis` (
 -- Dumping data for table `artis`
 --
 
-INSERT INTO `artis` (`id`, `name`, `old`, `type`, `startCareer`, `createdAt`, `updatedAt`) VALUES
-(1, 'Singer 1', '28', 'Rock', 2019, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(2, 'Singer 2', '30', 'Pop', 2017, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+INSERT INTO `Artis` (`id`, `name`, `old`, `type`, `startCareer`, `createdAt`, `updatedAt`) VALUES
 (7, 'awdawd', '21', 'Solo', 21, '2020-06-23 11:14:30', '2020-06-23 11:14:30'),
 (8, 'Ed Sheren', '40', 'Solo', 2001, '2020-06-23 14:20:11', '2020-06-23 14:20:11');
 
@@ -69,22 +67,10 @@ CREATE TABLE `music` (
 -- Dumping data for table `music`
 --
 
-INSERT INTO `music` (`id`, `title`, `thumbnail`, `year`, `singerId`, `attache`, `createdAt`, `updatedAt`) VALUES
-(1, 'Music 5', 'music5.png', '2007', 1, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 10:25:48', '0000-00-00 00:00:00'),
-(2, 'Music 4', 'music4.png', '2018', 1, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 07:25:46', '0000-00-00 00:00:00'),
-(3, 'Music 6', 'music6.png', '2018', 1, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 08:25:50', '0000-00-00 00:00:00'),
-(4, 'Music 3', 'music3.png', '2018', 1, 'http://res.cloudinary.com/alick/video/upload/v1502375674/Bedtime_Stories.mp3', '2020-06-23 08:25:43', '0000-00-00 00:00:00'),
-(5, 'Music 2', 'music2.png', '2018', 2, 'http://res.cloudinary.com/alick/video/upload/v1502375674/Bedtime_Stories.mp3', '2020-06-23 09:25:40', '0000-00-00 00:00:00'),
-(6, 'Music 8', 'music8.png', '2018', 1, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 10:25:55', '0000-00-00 00:00:00'),
-(7, 'Music 12', 'music12.png', '2018', 2, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 07:26:03', '0000-00-00 00:00:00'),
-(8, 'Music 9', 'music9.png', '2018', 2, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 10:25:57', '0000-00-00 00:00:00'),
-(9, 'Music 7', 'music7.png', '2018', 1, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 07:25:53', '0000-00-00 00:00:00'),
-(10, 'Music 10', 'music10.png', '2018', 2, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 09:25:59', '0000-00-00 00:00:00'),
-(11, 'Music 1 Namanya Panjang', 'music1.png', '2018', 1, 'http://res.cloudinary.com/alick/video/upload/v1502375674/Bedtime_Stories.mp3', '2020-06-23 10:25:37', '0000-00-00 00:00:00'),
-(12, 'Music 11', 'music11.png', '2018', 2, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 11:11:47', '0000-00-00 00:00:00'),
-(15, 'Lagu bagus', '1592914787251-persona4.jpg', '2020', 1, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 11:11:10', '2020-06-23 12:19:47'),
-(16, 'awdawd', '1592916061468-witcher3.jpg', '213', 1, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 11:13:29', '2020-06-23 12:41:01'),
-(17, 'What is Lorem Ipsum?', '1592918762198-godfather.jpg', '2121', 1, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 11:15:22', '2020-06-23 13:26:02'),
+INSERT INTO `Music` (`id`, `title`, `thumbnail`, `year`, `singerId`, `attache`, `createdAt`, `updatedAt`) VALUES
+(15, 'Lagu bagus', '1592914787251-persona4.jpg', '2020', 7, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 11:11:10', '2020-06-23 12:19:47'),
+(16, 'awdawd', '1592916061468-witcher3.jpg', '213', 7, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 11:13:29', '2020-06-23 12:41:01'),
+(17, 'What is Lorem Ipsum?', '1592918762198-godfather.jpg', '2121', 8, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 11:15:22', '2020-06-23 13:26:02'),
 (18, 'Lagu Ed Sheren', '1592922072201-home.png', '2018', 8, 'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3', '2020-06-23 14:21:12', '2020-06-23 14:21:12');
 
 -- --------------------------------------------------------

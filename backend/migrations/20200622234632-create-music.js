@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
 	up: (queryInterface, Sequelize) => {
-		return queryInterface.createTable('music', {
+		return queryInterface.createTable('Music', {
 			id: {
 				allowNull: false,
 				autoIncrement: true,
@@ -21,7 +21,7 @@ module.exports = {
 				allowNull: false,
 				type: Sequelize.INTEGER,
 				references: {
-					model: 'artis',
+					model: 'Artis',
 					key: 'id'
 				},
 				onUpdate: 'CASCADE',
@@ -41,6 +41,6 @@ module.exports = {
 		});
 	},
 	down: (queryInterface, Sequelize) => {
-		return queryInterface.dropTable('music');
+		return queryInterface.dropTable('Music');
 	}
 };

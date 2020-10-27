@@ -20,11 +20,11 @@ export const getMusicAll = (limit) => async (dispatch) => {
 			payload: res.data.data
 		});
 	} catch (err) {
-		// dispatch({
-		// 	type: GET_MUSIC_FAIL,
-		// 	payload: err.response.data.error.message
-		// });
-		console.log("failed to get artist!")
+		dispatch({
+			type: GET_MUSIC_FAIL,
+			payload: err.response.data.error.message
+		});
+		// console.log("failed to get artist!")
 	}
 };
 
