@@ -5,6 +5,6 @@
 3. import dumbplay.sql 
 4. config file in config.json
 5. npm run dev for start backend
-6. test
+6. test test
 
 Note : admin need register and role is `1`
