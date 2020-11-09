@@ -3,6 +3,7 @@
 Requirements :
 - Node.js 10 or 12
 - MySQL / PostgreSQL
+- Test 
 
 Apps Screenshot!
 
